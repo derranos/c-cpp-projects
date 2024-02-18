@@ -41,7 +41,7 @@ void rec(char *path){
 }
 int main(){
     fgets(word,200,stdin);
-    char *path = "/tmp";
+    char *path = "./tmp";
     rec(path);
     FILE *file = fopen("result.txt","w");
     if (file == NULL) {
